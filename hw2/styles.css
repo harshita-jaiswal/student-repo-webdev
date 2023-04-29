@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --black: #080808;
+  --white: #fefefe;
+  --gray: #565656;
+
+  --teal: #006060;
+  --violetred: #a2106d;
+  --orange: #ffa500;
+}
+
+body {
+  font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 1.2em;
+  color: var(--black);
+}
+
+h1 {
+  text-align: center;
+}
+
+form {
+  width: 400px;
+}
+
+/* Code for exercise 01-navbar */
+
+/* Code for exercise 02-cards */
+
+/* Code for exercise 03-table */
+
+/* Code for exercise 04-form */
