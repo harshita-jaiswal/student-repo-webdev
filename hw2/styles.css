@@ -53,7 +53,40 @@ form {
 }
 
 /* Code for exercise 02-cards */
-
+.cardList {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+.card {
+  padding: 20px;
+  flex: 1;
+  border: 1px solid #000000;
+  width: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 20px;
+}
+.card__image {
+  height: 200px;
+  width: 200px;
+}
+.card__desc {
+  padding: 10px 0;
+}
+.card__button {
+  width: 100%;
+  background-color: var(--black);
+  color: var(--white);
+  border: none;
+  height: 40px;
+  cursor: pointer;
+}
+.card__button:hover {
+  background-color: var(--violetred);
+}
 /* Code for exercise 03-table */
 
 /* Code for exercise 04-form */
