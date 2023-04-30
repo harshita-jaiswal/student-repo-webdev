@@ -79,7 +79,6 @@ form {
 .card__button {
   width: 100%;
   background-color: var(--black);
-  color: var(--white);
   border: none;
   height: 40px;
   cursor: pointer;
@@ -88,5 +87,28 @@ form {
   background-color: var(--violetred);
 }
 /* Code for exercise 03-table */
+.table {
+  margin: 0 auto;
+}
+.table__header {
+  background-color: var(--black);
+  color: var(--white);
+  padding: 20px;
+}
+.table__rowHead {
+  padding: 15px;
+  background-color: var(--violetred);
+  color: var(--white);
+}
+.row--black {
+  background-color: var(--black);
+}
+.table__rowData {
+  padding: 15px;
+  border: 1px solid #000000;
+}
+.table__bodyRow:hover {
+  background-color: var(--orange);
+}
 
 /* Code for exercise 04-form */
