@@ -13,9 +13,11 @@
 }
 
 body {
-  font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 1.2em;
   color: var(--black);
+  margin: 0;
+  padding: 0;
 }
 
 h1 {
@@ -27,6 +29,28 @@ form {
 }
 
 /* Code for exercise 01-navbar */
+.navbar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: var(--black);
+  justify-content: flex-end;
+  top: -19px;
+  position: relative;
+  padding: 0 10px;
+}
+.listItem {
+  list-style-type: none;
+  padding: 15px;
+}
+.listItem:hover {
+  background-color: var(--violetred);
+}
+.navLink {
+  color: var(--white);
+  text-decoration: none;
+  padding: 15px 12px;
+}
 
 /* Code for exercise 02-cards */
 
