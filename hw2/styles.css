@@ -39,11 +39,11 @@ form {
   position: relative;
   padding: 0 10px;
 }
-.listItem {
+.navbar__listItem {
   list-style-type: none;
   padding: 15px;
 }
-.listItem:hover {
+.navbar__listItem:hover {
   background-color: var(--violetred);
 }
 .navLink {
