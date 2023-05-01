@@ -79,6 +79,7 @@ form {
 .card__button {
   width: 100%;
   background-color: var(--black);
+  color: var(--white);
   border: none;
   height: 40px;
   cursor: pointer;
@@ -112,3 +113,69 @@ form {
 }
 
 /* Code for exercise 04-form */
+
+.formContainer {
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.form {
+  border: 1px solid #000000;
+  padding: 20px;
+  border-radius: 5px;
+}
+.form__subheading {
+  margin: 0;
+  font-size: 16px;
+}
+.form__title {
+  margin-bottom: 0;
+}
+.form__field {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 15px;
+  align-items: center;
+}
+.field__label {
+  font-weight: 600;
+}
+.field__input {
+  height: 22px;
+  width: 60%;
+  padding: 3px;
+}
+.form__fieldset {
+  border: none;
+  all: unset;
+  margin: 10px 0;
+}
+.input__radio {
+  font-size: 10px;
+}
+.form__button {
+  padding: 10px 0;
+}
+.button__submit {
+  background-color: var(--black);
+  color: var(--white);
+  width: 48%;
+  padding: 10px;
+  border: none;
+  font-weight: 600;
+  font-size: 14px;
+}
+.button__submit:hover {
+  background-color: var(--violetred);
+}
+.button__reset {
+  width: 48%;
+  padding: 10px;
+  border-radius: 0;
+  border: 1px solid #000000;
+  background-color: var(--white);
+}
+.button__reset:hover {
+  background-color: var(--gray);
+}

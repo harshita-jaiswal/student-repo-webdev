@@ -11,6 +11,86 @@
     <main>
       <h1>Exercise 04 - Form</h1>
       <!-- Add your code here -->
+      <div class="formContainer">
+        <form class="form" action="/submit">
+          <h2 class="form__title">Sign up Form</h2>
+          <p class="form__subheading">Fill up the items in the form below.</p>
+          <div class="form__field">
+            <label class="field__label" for="name">Name:</label>
+            <input class="field__input" type="text" id="name" name="name" />
+          </div>
+          <div class="form__field">
+            <label class="field__label" for="username">Username:</label>
+            <input
+              class="field__input"
+              type="text"
+              id="username"
+              name="username"
+            />
+          </div>
+          <div class="form__field">
+            <label class="field__label" for="email">Email:</label>
+            <input class="field__input" type="email" id="email" name="email" />
+          </div>
+          <div class="form__field">
+            <label class="field__label" for="password">Password:</label>
+            <input
+              class="field__input"
+              type="password"
+              id="password"
+              name="password"
+            />
+          </div>
+          <div class="form__field">
+            <label class="field__label" for="dob">Date of birth:</label>
+            <input class="field__input" type="date" id="dob" name="dob" />
+          </div>
+
+          <fieldset class="form__fieldset">
+            <legend class="field__label">Preferred Pronouns</legend>
+            <div>
+              <input
+                class="input__radio"
+                type="radio"
+                name="pronouns"
+                id="she"
+              />
+              <label for="she">She/her</label>
+            </div>
+            <div>
+              <input
+                class="input__radio"
+                type="radio"
+                name="pronouns"
+                id="he"
+              />
+              <label for="he">He/him</label>
+            </div>
+            <div>
+              <input
+                class="input__radio"
+                type="radio"
+                name="pronouns"
+                id="they"
+              />
+              <label for="they">They/them</label>
+            </div>
+            <div>
+              <input
+                class="input__radio"
+                type="radio"
+                name="pronouns"
+                id="notToSay"
+              />
+              <label for="notToSay">I prefer not to say</label>
+            </div>
+          </fieldset>
+          <div class="form__button">
+            <button class="button__submit" type="submit">Submit</button>
+            <button class="button__reset" type="reset">Reset</button>
+          </div>
+        </form>
+      </div>
     </main>
   </body>
 </html>
