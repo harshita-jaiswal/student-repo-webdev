@@ -1,0 +1,53 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --black: #080808;
+  --white: #fefefe;
+  --gray: #565656;
+  --light-light-gray: rgba(120, 118, 118, 0.1);
+  --light-gray: rgba(120, 118, 118, 0.5);
+
+  --teal: #006060;
+  --violetred: #a2106d;
+  --orange: #ffa500;
+}
+
+html {
+  background-color: var(--light-light-gray);
+}
+
+body {
+  font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 1.2em;
+  color: var(--black);
+}
+
+h1 {
+  text-align: center;
+  font-size: 2rem;
+}
+
+form {
+  width: 400px;
+}
+
+/* Code for exercise 01-hello */
+
+/* Code for exercise 02-form */
+
+/* Code for exercise 03-starships */
+
+.btn-group {
+  margin: auto;
+  width: 400px;
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 20px;
+}
+
+.btn {
+  width: 80px;
+  padding: 10px;
+}
