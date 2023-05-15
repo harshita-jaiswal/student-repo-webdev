@@ -5,13 +5,98 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>02 - Form</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="../hw2/styles.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.15.0/moment.min.js"></script>
     <script defer src="02-form.js"></script>
   </head>
   <body>
     <main>
       <h1>Exercise 02 - Form</h1>
       <!-- You can reuse the form you created in HW 2 -->
+      <div class="formContainer">
+        <form class="form">
+          <h2 class="form__title">Sign up Form</h2>
+          <p class="form__subheading">Fill up the items in the form below.</p>
+          <div class="form__field">
+            <label class="field__label" for="name">Name:</label>
+            <input class="field__input" type="text" id="name" name="name" />
+          </div>
+          <div class="form__field">
+            <label class="field__label" for="username">Username:</label>
+            <input
+              class="field__input"
+              type="text"
+              id="username"
+              name="username"
+            />
+          </div>
+          <div class="form__field">
+            <label class="field__label" for="email">Email:</label>
+            <input class="field__input" type="email" id="email" name="email" />
+          </div>
+          <div class="form__field">
+            <label class="field__label" for="password">Password:</label>
+            <input
+              class="field__input"
+              type="password"
+              id="password"
+              name="password"
+            />
+          </div>
+          <div class="form__field">
+            <label class="field__label" for="dob">Date of birth:</label>
+            <input class="field__input" type="date" id="dob" name="dob" />
+          </div>
+
+          <fieldset class="form__fieldset">
+            <legend class="field__label">Preferred Pronouns</legend>
+            <div>
+              <input
+                class="input__radio"
+                type="radio"
+                name="pronouns"
+                id="she"
+                value="She/her"
+              />
+              <label for="she">She/her</label>
+            </div>
+            <div>
+              <input
+                class="input__radio"
+                type="radio"
+                name="pronouns"
+                id="he"
+                value="He/him"
+              />
+              <label for="he">He/him</label>
+            </div>
+            <div>
+              <input
+                class="input__radio"
+                type="radio"
+                name="pronouns"
+                id="they"
+                value="They/them"
+              />
+              <label for="they">They/them</label>
+            </div>
+            <div>
+              <input
+                class="input__radio"
+                type="radio"
+                name="pronouns"
+                id="notToSay"
+                value="I prefer not to say"
+              />
+              <label for="notToSay">I prefer not to say</label>
+            </div>
+          </fieldset>
+          <div class="form__button">
+            <button class="button__submit" type="submit">Submit</button>
+            <button class="button__reset" type="reset">Reset</button>
+          </div>
+        </form>
+      </div>
     </main>
   </body>
 </html>
