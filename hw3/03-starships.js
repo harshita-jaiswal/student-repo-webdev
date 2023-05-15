@@ -20,7 +20,6 @@ const createSpaceshipComponent = (spaceship) => {
   container.style.margin = "10px";
   container.style.borderRadius = "10px";
   container.style.flex = "1 1 46%";
-  // container.style.width = "50%";
 
   const namePrice = document.createElement("div");
   namePrice.style.display = "flex";
@@ -32,6 +31,8 @@ const createSpaceshipComponent = (spaceship) => {
   name.style.flex = "1";
 
   const credits = document.createElement("span");
+  credits.style.maxWidth = "65%";
+  credits.style.textAlign = "right";
   const cost = parseInt(spaceship.cost_in_credits);
   credits.textContent = `${
     !isNaN(cost) ? cost.toLocaleString() : spaceship.cost_in_credits
@@ -75,18 +76,16 @@ const getElement = (label, value) => {
   element.style.display = "flex";
   element.style.flexDirection = "column";
   element.style.width = "50%";
-  element.style.alignItems = "center";
   element.style.padding = "0 10px";
   element.style.textAlign = "center";
 
   const elementValue = document.createElement("span");
   elementValue.style.fontWeight = "bolder";
+  elementValue.style.margin = "0";
   elementValue.textContent = value;
 
   const elementLabel = document.createElement("span");
   elementLabel.textContent = label;
-  elementLabel.style.textAlign = "center";
-  elementLabel.style.margin = "0";
 
   element.append(elementValue);
   element.append(elementLabel);

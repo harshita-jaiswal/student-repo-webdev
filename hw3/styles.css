@@ -38,15 +38,6 @@ form {
 /* Code for exercise 02-form */
 
 /* Code for exercise 03-starships */
-.btn {
-  background-color: var(--black);
-  color: var(--white);
-  border: none;
-}
-.btn:hover,
-.btn:focus {
-  background-color: var(--violetred);
-}
 
 .btn-group {
   margin: auto;
@@ -59,4 +50,11 @@ form {
 .btn {
   width: 80px;
   padding: 10px;
+  background-color: var(--black);
+  color: var(--white);
+  border: none;
+}
+.btn:hover,
+.btn:focus {
+  background-color: var(--violetred);
 }
