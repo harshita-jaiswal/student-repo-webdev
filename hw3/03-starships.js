@@ -15,38 +15,27 @@ const fetchData = (url) => {
 
 const createSpaceshipComponent = (spaceship) => {
   const container = document.createElement("section"); // do not modify this line
-  container.style.padding = "30px 20px";
-  container.style.background = "var(--white)";
-  container.style.margin = "10px";
-  container.style.borderRadius = "10px";
-  container.style.flex = "1 1 46%";
+  container.setAttribute("class", "listWrapper");
 
   const namePrice = document.createElement("div");
-  namePrice.style.display = "flex";
-  namePrice.style.justifyContent = "space-between";
-  namePrice.style.fontWeight = "bolder";
+  namePrice.setAttribute("class", "namePrice");
 
   const name = document.createElement("span");
   name.textContent = spaceship.name;
-  name.style.flex = "1";
 
   const credits = document.createElement("span");
-  credits.style.maxWidth = "65%";
-  credits.style.textAlign = "right";
+  credits.setAttribute("class", "namePrice__credits");
   const cost = parseInt(spaceship.cost_in_credits);
   credits.textContent = `${
     !isNaN(cost) ? cost.toLocaleString() : spaceship.cost_in_credits
   } credits`;
 
   const manufacturer = document.createElement("p");
-  manufacturer.style.margin = "0";
-  manufacturer.style.padding = "5px 0";
-  manufacturer.style.maxWidth = "90%";
+  manufacturer.setAttribute("class", "manufacturer");
   manufacturer.textContent = spaceship.manufacturer;
 
   const atmSpeedCargoCap = document.createElement("div");
-  atmSpeedCargoCap.style.display = "flex";
-  atmSpeedCargoCap.style.margin = "15px 0 0";
+  atmSpeedCargoCap.setAttribute("class", "atmSpeedCargoCap");
 
   const atmSpeed = getElement(
     "Max atmosphering speed",
@@ -57,7 +46,7 @@ const createSpaceshipComponent = (spaceship) => {
     "Cargo Capacity",
     parseInt(spaceship.cargo_capacity).toLocaleString()
   );
-  cargoCapacity.style.borderLeft = "1px solid var(--light-gray)";
+  cargoCapacity.classList.add("border-left");
 
   atmSpeedCargoCap.append(atmSpeed);
   atmSpeedCargoCap.append(cargoCapacity);
@@ -73,15 +62,10 @@ const createSpaceshipComponent = (spaceship) => {
 
 const getElement = (label, value) => {
   const element = document.createElement("div");
-  element.style.display = "flex";
-  element.style.flexDirection = "column";
-  element.style.width = "50%";
-  element.style.padding = "0 10px";
-  element.style.textAlign = "center";
+  element.setAttribute("class", "element");
 
   const elementValue = document.createElement("span");
-  elementValue.style.fontWeight = "bolder";
-  elementValue.style.margin = "0";
+  elementValue.setAttribute("class", "fontWeight-bolder");
   elementValue.textContent = value;
 
   const elementLabel = document.createElement("span");

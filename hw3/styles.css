@@ -38,6 +38,45 @@ form {
 /* Code for exercise 02-form */
 
 /* Code for exercise 03-starships */
+.listWrapper {
+  padding: 30px 20px;
+  background: var(--white);
+  margin: 10px;
+  border-radius: 10px;
+  flex: 1 1 46%;
+}
+.namePrice {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bolder;
+}
+.namePrice__credits {
+  max-width: 65%;
+  text-align: right;
+}
+.manufacturer {
+  margin: 0px;
+  padding: 5px 0px;
+  max-width: 90%;
+}
+.atmSpeedCargoCap {
+  display: flex;
+  margin: 15px 0px 0px;
+}
+.border-left {
+  border-left: 1px solid var(--light-gray);
+}
+
+.element {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding: 0px 10px;
+  text-align: center;
+}
+.fontWeight-bolder {
+  font-weight: bolder;
+}
 
 .btn-group {
   margin: auto;
